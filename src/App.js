@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
-import { allProblems } from './questions';
+
+import { allProblems } from './questions/index';
 import About from './About';
 
 // Custom Math component that uses KaTeX directly
@@ -301,7 +302,10 @@ function App() {
     'Algebra': true,
     'Calculus': true,
     'Differential Equations': true,
-    'Transport Phenomena': true
+    // 'Transport Phenomena': true,
+    'Probability and Statistics': true,
+    'Linear Algebra': true,
+    // 'Numerical Methods': true
   });
   const [showCategoryFilter, setShowCategoryFilter] = useState(false);
   const [currentPage, setCurrentPage] = useState('practice'); // 'practice' or 'about'
@@ -324,7 +328,9 @@ function App() {
     if (problem) {
       setCurrentProblem(problem);
     }
-  }, [getRandomProblem]);
+    // Only run this effect when activeCategories change, not when getRandomProblem changes
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeCategories]);
 
   const handleNextProblem = () => {
     const problem = getRandomProblem();
@@ -335,7 +341,7 @@ function App() {
   };
 
   const toggleAnswer = () => {
-    setShowAnswer(!showAnswer);
+    setShowAnswer(prevState => !prevState);
   };
 
   const toggleCategory = (category) => {
@@ -490,6 +496,7 @@ function App() {
           )}
           
           <PracticePage
+            key={currentProblem?.id || 'no-problem'}
             currentProblem={currentProblem}
             showAnswer={showAnswer}
             onToggleAnswer={toggleAnswer}
