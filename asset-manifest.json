@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/calculus-practice/static/css/main.44071903.css",
-    "main.js": "/calculus-practice/static/js/main.b55157f1.js",
+    "main.js": "/calculus-practice/static/js/main.3699fd3f.js",
     "static/js/453.b587648b.chunk.js": "/calculus-practice/static/js/453.b587648b.chunk.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/calculus-practice/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/calculus-practice/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -65,11 +65,11 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/calculus-practice/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/calculus-practice/index.html",
     "main.44071903.css.map": "/calculus-practice/static/css/main.44071903.css.map",
-    "main.b55157f1.js.map": "/calculus-practice/static/js/main.b55157f1.js.map",
+    "main.3699fd3f.js.map": "/calculus-practice/static/js/main.3699fd3f.js.map",
     "453.b587648b.chunk.js.map": "/calculus-practice/static/js/453.b587648b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44071903.css",
-    "static/js/main.b55157f1.js"
+    "static/js/main.3699fd3f.js"
   ]
 }
