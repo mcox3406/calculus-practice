@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import { allProblems } from './questions';
@@ -312,11 +312,11 @@ function App() {
   );
 
   // Get a random problem
-  const getRandomProblem = () => {
+  const getRandomProblem = useCallback(() => {
     if (filteredProblems.length === 0) return null;
     const randomIndex = window.Math.floor(window.Math.random() * filteredProblems.length);
     return filteredProblems[randomIndex];
-  };
+  }, [filteredProblems]);
 
   // Initialize with a random problem
   useEffect(() => {
@@ -324,7 +324,7 @@ function App() {
     if (problem) {
       setCurrentProblem(problem);
     }
-  }, [activeCategories]); 
+  }, [getRandomProblem]);
 
   const handleNextProblem = () => {
     const problem = getRandomProblem();
