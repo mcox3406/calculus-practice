@@ -43,49 +43,16 @@ function About() {
           marginBottom: "1rem",
           marginTop: 0
         }}>
-          The Problem
+          Purpose
         </h3>
 
         <p style={{
           lineHeight: "1.6",
           marginBottom: "1.5rem"
         }}>
-            As I was going through the Course X core classes at MIT, I often found myself shockingly slow at solving basic math problems. Considering that I used to be able to solve these same types of problems extremely quickly in middle/high school, this was a bit of a wake up call regarding the deterioration of my mathematical skills. Too much Mathematica, not enough pencil and paper... This website is my attempt to reverse this trend.
+            Too much Mathematica, not enough pencil and paper... This website is my attempt to reverse this trend. You can use it to practice being quick at math problems—it's like <a href="https://arithmetic.zetamac.com">Zetamac</a>, but for more complex problems.
         </p>
 
-        <h3 style={{
-          fontSize: "1.5rem",
-          fontWeight: "500",
-          marginBottom: "1rem",
-          marginTop: 0
-        }}>
-          Train Your Mathematical Reflexes
-        </h3>
-
-        <p style={{
-          lineHeight: "1.6",
-          marginBottom: "1.5rem"
-        }}>
-            The problems are designed to help you do the following: 
-        </p>
-
-        <ul style={{
-          listStyleType: "disc",
-          paddingLeft: "2rem",
-          marginBottom: "1.5rem"
-        }}>
-          <li style={{ marginBottom: "0.5rem" }}>Build speed and pattern recognitions</li>
-          <li style={{ marginBottom: "0.5rem" }}>Boost confidence with basic operations</li>
-          <li style={{ marginBottom: "0.5rem" }}>Free up mental resources for tougher problems</li>
-          <li style={{ marginBottom: "0.5rem" }}>Lower exam anxiety</li>
-        </ul>
-
-        <p style={{
-          lineHeight: "1.6",
-          marginBottom: "1.5rem"
-        }}>
-            I think the value of this extends well beyond just using this for MIT classes. There is something to be said about having very quick mental math ability, and I think this is a way to help develop that.
-        </p>
 
         <h3 style={{
           fontSize: "1.25rem",
